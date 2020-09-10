@@ -142,14 +142,6 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 
-# SWAGGER_SETTINGS = {
-#     'SECURITY_DEFINITIONS': {
-#         'api_key': {
-#             'type': 'apiKey',
-#             'in': 'header',
-#             'name': 'Authorization'
-#         }
-#     },
-#     'USE_SESSION_AUTH': False,
-#     'JSON_EDITOR': True,
-# }
+SWAGGER_SETTINGS = {
+    'LOGOUT_URL': 'rest_framework:logout',
+}
